@@ -117,17 +117,79 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"css.js":[function(require,module,exports) {
-"use strict";
+})({"E:/user/Downloads/npm/node_global/node_modules/parcel/src/builtins/bundle-url.js":[function(require,module,exports) {
+var bundleURL = null;
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var string = "\n.body1{\n    background-color:#EFA41C;\n    margin:30px auto;\n    width:126px;\n    height:200px;\n    border-radius:300px 300px 200px 200px;\n    position: relative;\n    \n    }\n    .ears{\n        width:36px;\n        height:70px;\n        border-radius:100% 100% 0 0;\n        background-color:#EFA41C;\n        position: absolute;\n        z-index: -1;\n    }\n    .ears::before{\n    content:'';\n    display: block;\n    width: 24px;\n    height:40px;\n    background-color: #E86029;\n    position:absolute;\n    left:4px;\n    top:15px;\n    border-radius:100% 100% 0 0;\n    \n    }\n    .ears.left{\n        top:-20px;\n        left:2px;\n    }\n    .ears.right{\n        top:-20px;\n        right:2px;\n    }\n    .ears.left::before{\n      top:18px;\n      left:6px\n    }\n    .eyebrows{\n        width:16px;\n        height:12px;\n        border-radius:8px;\n        background-color:white;\n        position: absolute;\n        ;\n        transform: translate(-50% ,-50%);\n        top:50%;\n    }\n    .eyebrows.left{\n    left:30px;\n    top:22px;\n    }\n    .eyebrows.right{\n        right:22px;\n        top:20px;\n    }\n    .nose{\n        background: #512E27;\n        width: 20px;\n        height: 10px;\n        border-radius: 0 0 30px 30px;\n        position: relative;\n       left:50%;\n       top:45px;\n        transform: translateX(-50%);\n      }\n      .eye{\n        width: 20px;\n        height:20px;\n        border-radius:50%;\n        border:3px solid black;\n        position: absolute;\n        top:34px;\n      \n      }\n      .eye::after{\n        content:'';\n        display: block;\n        width: 23px; \n        height:12px;\n        background-color:#EFA41C;\n        position:absolute;\n        left:-3px;\n        top:50%;\n    \n      }\n      .eye.left{\n    left:30px;\n      }\n      .eye.right{\n    right:30px;\n      }\n      .mouth{\n        width: 20px;\n        height: 20px;\n      background-color:#EA7775;\n    \n        position: absolute;\n        top:62px;\n        left: 0;\n        right: 0;\n        margin: auto;\n        border-radius: 120px 120px 0 0;\n        transform: rotate(180deg);\n      }\n    .whiskers{\n        width: 20px;\n        height: 10px;\n        border:3px solid black;\n       position: absolute;\n       z-index: 3;\n        \n    }\n    .whiskers::after{\n        content:'';\n        display: block;\n        width:10px;\n        height:12px;\n        border-radius:5px;\n        background-color:#EFA41C;\n        position: absolute;\n        top:-6px;\n        left:1px\n    }\n    .whiskers.left{\n        border-top:none;\n         border-radius: 0 0 60px 60px; \n         left:50%;\n         top:60px;\n    \n    \n    }\n    .whiskers.right{\n        border-top:none;\n         border-radius: 0 0 60px 60px; \n         right:50%;\n         top:60px;\n    \n    \n    }\n    .bandana{\n        width:126px;\n        height:10px;\n        background-color:#5DBDB9;\n        position: absolute;\n        top:90px;\n        box-shadow: inset -5px -5px rgba(76,161,160, 0.5);\n    }\n    .bandana>.top{\n    width: 25px; \n    height: 25px;\n    background-color:#5DBDB9;\n      border-radius: 25px 0px;\n      position:absolute;\n      right:-23px;\n      top:-20px;\n      box-shadow:inset  -5px -5px rgba(79,163,161, 0.5)\n    }\n    .bandana>.bottom{\n        width: 25px; \n        height:25px;\n        background-color:#5DBDB9;\n          border-radius: 0 25px;\n          position:absolute;\n          right:-25px;\n          top:-8px;\n          transform:rotate(-30deg) ;\n          box-shadow:inset  -5px -5px rgba(79,163,161, 0.5)\n        }\n        .stomach{\n            width: 72px;\n            height:72px;\n            position:absolute;\n            left:50%;\n            top:105px;\n            transform:translateX(-50%);\n            background-color:white;\n            border-radius:0 0 36px 36px;\n            box-shadow:inset 5px 5px rgb(222,222,222,0.5)\n    \n        }\n        .legs{\n            /* width:140px;\n            position:absolute;\n            top:180px;\n            height:30px;\n            background-color:white;\n            border-radius: */\n        }\n        .leg{\n            width:30px;\n            height:15px;\n            border-radius:15px 15px 0 0;\n            background-color:white;\n            position:absolute;\n            bottom:0px;\n            box-shadow:inset 0 -5px rgb(222,222,222,0.5)\n          \n          \n        }\n        .leg::after{\n            content:'';\n            display:block;\n            width:30px;\n            height:15px;\n            border-radius:15px 15px 0 0;\n            background-color:white;\n            position:absolute;\n            bottom:0px;\n            z-index:-5;\n            box-shadow:inset 0 -4px rgb(222,222,222,0.5)\n           \n        }\n        .leg.left{\n            left:25px;\n        }\n        .leg.left::after{\n            left:-25px;\n    \n        }\n        .leg.right{\n            right:25px;\n        }\n        .leg.right:after{\n            right:-25px;\n        }\n        .tail{\n            width:60px;\n            height:12px;\n            background-color:#EFA41C;\n            border-radius:5px ;\n            position:absolute;\n            top:140px;\n            left:-40px;\n            transition: 300ms;\n            transform: rotate(-30deg);\n            animation:move 200ms infinite  alternate; \n    \n        }\n        @keyframes move{\n            0%{transform: rotate(30deg);}\n            100%{transform: rotate(40deg);}\n        }\n        ";
-var _default = string;
-exports.default = _default;
-},{}],"E:/user/Downloads/npm/node_global/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+function getBundleURLCached() {
+  if (!bundleURL) {
+    bundleURL = getBundleURL();
+  }
+
+  return bundleURL;
+}
+
+function getBundleURL() {
+  // Attempt to find the URL of the current script and use that as the base URL
+  try {
+    throw new Error();
+  } catch (err) {
+    var matches = ('' + err.stack).match(/(https?|file|ftp|chrome-extension|moz-extension):\/\/[^)\n]+/g);
+
+    if (matches) {
+      return getBaseURL(matches[0]);
+    }
+  }
+
+  return '/';
+}
+
+function getBaseURL(url) {
+  return ('' + url).replace(/^((?:https?|file|ftp|chrome-extension|moz-extension):\/\/.+)\/[^/]+$/, '$1') + '/';
+}
+
+exports.getBundleURL = getBundleURLCached;
+exports.getBaseURL = getBaseURL;
+},{}],"E:/user/Downloads/npm/node_global/node_modules/parcel/src/builtins/css-loader.js":[function(require,module,exports) {
+var bundle = require('./bundle-url');
+
+function updateLink(link) {
+  var newLink = link.cloneNode();
+
+  newLink.onload = function () {
+    link.remove();
+  };
+
+  newLink.href = link.href.split('?')[0] + '?' + Date.now();
+  link.parentNode.insertBefore(newLink, link.nextSibling);
+}
+
+var cssTimeout = null;
+
+function reloadCSS() {
+  if (cssTimeout) {
+    return;
+  }
+
+  cssTimeout = setTimeout(function () {
+    var links = document.querySelectorAll('link[rel="stylesheet"]');
+
+    for (var i = 0; i < links.length; i++) {
+      if (bundle.getBaseURL(links[i].href) === bundle.getBundleURL()) {
+        updateLink(links[i]);
+      }
+    }
+
+    cssTimeout = null;
+  }, 50);
+}
+
+module.exports = reloadCSS;
+},{"./bundle-url":"E:/user/Downloads/npm/node_global/node_modules/parcel/src/builtins/bundle-url.js"}],"style.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"E:/user/Downloads/npm/node_global/node_modules/parcel/src/builtins/css-loader.js"}],"E:/user/Downloads/npm/node_global/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -155,7 +217,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50898" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51776" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -331,5 +393,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["E:/user/Downloads/npm/node_global/node_modules/parcel/src/builtins/hmr-runtime.js","css.js"], null)
-//# sourceMappingURL=css.16d824bf.js.map
+},{}]},{},["E:/user/Downloads/npm/node_global/node_modules/parcel/src/builtins/hmr-runtime.js"], null)
+//# sourceMappingURL=/style.e308ff8e.js.map
